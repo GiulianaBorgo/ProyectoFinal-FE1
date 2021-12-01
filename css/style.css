@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+*{box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{font-family: 'Be Vietnam Pro', sans-serif;  
+}
+
+.getstarted, button {text-decoration: none;
+    color: white;
+    background-color: #F3603B;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    font-size: 0.82375rem;
+    padding: 12.5px 30.5px;
+}
+
+.getstarted:hover {
+    background-color: #f07d60;
+}
+
+li {list-style-type: none;}
+
+li > a{ text-decoration: none;
+    color: #242E52;
+    font-size: 0.8125rem;
+    padding-left: 1.75rem;
+}
+.nav-bar > li > a:hover {
+    color: #B3B2B7;
+}
+
+header{display:flex;
+    justify-content: space-between;
+    padding: 65px 11.4583vw 0px 11.4583vw;
+}
+
+.nav-bar{ color: #242E52;
+    display:flex;
+}
+
+.section1 { display: flex;
+    padding: 104px 11.4583vw 99px 11.4583vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1 {color: #232C50;
+    font-size: 3.625rem;
+    line-height: 66px;
+    letter-spacing: -0.035em;
+    margin-bottom: 26px;
+}
+
+.parrafo1{line-height: 157.1%;
+    width: 350px;
+    margin-bottom: 28px;    
+}
+
+.marg-graficos {
+    width: 100%;
+}
+
+
+.section2{display: flex;
+    padding:0px 11.4583vw 124px 11.4583vw
+}
+
+.h2-section2{
+    color: #232851;
+    font-size: 2.25rem;
+}
+
+#parrafo2{width: 337px;}
+
+.contenedor-points {width: 553px;
+    padding-left: 92px;
+    position: relative;
+}
+
+.points {margin-bottom: 27px;
+    margin-top: 18px;
+    color: #B3B2B7;
+}
+
+.num::before {
+    content:"01";
+    background-color:  #F3603B;
+    color: white;
+    border-radius: 30px;
+    padding:10px 25px;
+    position: absolute;
+    left: -23px;
+}
+
+h4{color:  #323851;
+    margin-bottom: 21px;
+}
+
+article, .section2 > div {
+    width: 50%;
+}
+
+.h2-section3 { color: #242E53;
+    text-align: center;   
+    font-size: 2.4375rem; 
+}
+
+.cont-test {display: flex;
+margin:109px 4.2361vw 45px 4.9305vw
+}
+
+.testimonios {background-color: #FAFAFA;
+    color:  #B9B9C1;
+    width: 445px;
+    text-align: center;
+    margin-right: 10px; 
+}
+
+.img-avatar{position: relative;
+    top: -50px;
+}
+
+.get2{text-align: center;
+    margin-bottom: 180px;
+}
+
+.footer1{
+    background-color:  #F3613C;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 11.4583vw;
+    flex-wrap: wrap;
+}
+
+.footer1 > h2 {
+    width: 30.4167vw;
+    font-size: 2.5rem;
+    letter-spacing: -0.005em;
+}
+
+.get-white {background-color: white;
+color: #F3603B;
+height: 44px;
+}
+
+.get-white:hover {
+    color: #f07d60;
+    background-color: white;
+}
+
+.footer2{background-color:  #1E1E26;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 56.29px 11.4375vw 69.32px 11.4375vw;
+    position: relative;
+}
+
+.icono {
+    display: flex;
+    margin-top: 66.68px;
+}
+
+/*
+a[href^="https"]:hover{
+    color: #F3603B;
+}*/
+
+a[href^="https"]{
+    padding-left: 0px;
+    padding-right: 13.33px;
+}
+
+button{
+    box-shadow: none;
+    padding:11.5px 22.5px;}
+
+button:hover {
+    background-color: #f07d60;
+}
+
+input[type="email"]{
+    border-radius: 50px;
+    padding: 12.5px 10px
+}
+
+input[type="email"]:invalid {
+    color:red;
+}
+
+/*.feedback:invalid {
+    color:red
+ <span class="feedback">Please insert a valid email</span>   
+}*/
+
+.copyright{ font-size: 0.78125rem;
+    color: #8C8C94;
+    position: absolute;
+    right: 164.9px; 
+    bottom: 62px;
+}
+
+.li-footer > li > a{
+    color:white;
+}
+
+.li-footer > li > a:hover{
+    color:#F3603B
+}
+
+.li-footer > li{
+    margin-bottom: 12px;
+}
+
+img[alt="Icon Hamburguer"]{
+    display: none;
+}
+
+@media (max-width: 1020px) {
+nav, header > a {
+        display: none;
+    }
+img[alt="Icon Hamburguer"]{
+    display: block;
+}
+.testimonios:nth-child(2) {
+    display: none;
+
+}
+
+
+}
+
+@media (max-width:862px) {
+    .footer2, .section1{
+        flex-direction: column-reverse;
+    }
+
+    .section2, .footer1{
+        flex-direction: column;
+    }
+
+    .testimonios:nth-child(3){
+        display: none;
+    }
+
+    .li-footer{
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
