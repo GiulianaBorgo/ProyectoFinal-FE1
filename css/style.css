@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
 
 *{box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
-body{font-family: 'Be Vietnam Pro', sans-serif;  
+body{font-family: 'Be Vietnam Pro', sans-serif;}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    padding: 65px 11.4583vw 0px 11.4583vw;
+    background-image: url(../imagenes/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: right -105px top -80px;  
+    background-size: 50%;
 }
 
-.getstarted, button {text-decoration: none;
+.getstarted, button {
+    text-decoration: none;
     color: white;
     background-color: #F3603B;
     border-radius: 50px;
@@ -17,31 +27,37 @@ body{font-family: 'Be Vietnam Pro', sans-serif;
     padding: 12.5px 30.5px;
 }
 
-.getstarted:hover {
-    background-color: #f07d60;
-}
+.getstarted:hover {background-color: #f07d60;}
 
 li {list-style-type: none;}
 
-li > a{ text-decoration: none;
+a{text-decoration: none;}
+
+.nav-bar{display:flex;}
+
+.nav-bar a{ 
     color: #242E52;
     font-size: 0.8125rem;
     padding-left: 1.75rem;
 }
-.nav-bar > li > a:hover {
+
+.nav-bar a:hover {
     color: #B3B2B7;
 }
 
-header{display:flex;
-    justify-content: space-between;
-    padding: 65px 11.4583vw 0px 11.4583vw;
+img[alt="Icon Hamburguer"]{
+    display: none;
 }
 
-.nav-bar{ color: #242E52;
-    display:flex;
+main{
+    background-image: url(../imagenes/bg-tablet-pattern.svg),url(../imagenes/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: right -50px top -130px, bottom 100px left -260px;
+    background-size: 50%;
 }
 
-.section1 { display: flex;
+.section1 { 
+    display: flex;
     padding: 104px 11.4583vw 99px 11.4583vw;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -49,13 +65,14 @@ header{display:flex;
 
 h1 {color: #232C50;
     font-size: 3.625rem;
-    line-height: 66px;
+    line-height: 4.125rem;
     letter-spacing: -0.035em;
     margin-bottom: 26px;
 }
 
-.parrafo1{line-height: 157.1%;
-    width: 350px;
+.parrafo1{
+    line-height: 157.1%;
+    width: 24.3055vw;
     margin-bottom: 28px;    
 }
 
@@ -64,7 +81,8 @@ h1 {color: #232C50;
 }
 
 
-.section2{display: flex;
+.section2{
+    display: flex;
     padding:0px 11.4583vw 124px 11.4583vw
 }
 
@@ -75,55 +93,63 @@ h1 {color: #232C50;
 
 #parrafo2{width: 337px;}
 
-.contenedor-points {width: 553px;
+.contenedor-points {
+    width: 553px;
     padding-left: 92px;
     position: relative;
 }
 
-.points {margin-bottom: 27px;
+.points{
+    margin-bottom: 27px;
     margin-top: 18px;
     color: #B3B2B7;
 }
 
-.num::before {
-    content:"01";
+.num {
     background-color:  #F3603B;
     color: white;
     border-radius: 30px;
     padding:10px 25px;
     position: absolute;
-    left: -23px;
+    left: -15px;
 }
 
-h4{color:  #323851;
+h4{
+    color:  #323851;
     margin-bottom: 21px;
 }
 
-article, .section2 > div {
+article {
     width: 50%;
 }
 
-.h2-section3 { color: #242E53;
+.h2-section3 {
+    color: #242E53;
     text-align: center;   
     font-size: 2.4375rem; 
 }
 
-.cont-test {display: flex;
-margin:109px 4.2361vw 45px 4.9305vw
+.cont-test {
+    display: flex;
+    margin:109px 4.2361vw 45px 4.9305vw;
+    justify-content: center;
 }
 
-.testimonios {background-color: #FAFAFA;
+.testimonios {
+    background-color: #FAFAFA;
     color:  #B9B9C1;
     width: 445px;
     text-align: center;
     margin-right: 10px; 
 }
 
-.img-avatar{position: relative;
+.img-avatar{
+    position: relative;
     top: -50px;
 }
 
-.get2{text-align: center;
+.get2{
+    text-align: center;
     margin-bottom: 180px;
 }
 
@@ -135,6 +161,7 @@ margin:109px 4.2361vw 45px 4.9305vw
     align-items: center;
     padding: 64px 11.4583vw;
     flex-wrap: wrap;
+    background-image: url(../imagenes/bg-simplify-section-desktop.svg);
 }
 
 .footer1 > h2 {
@@ -143,9 +170,10 @@ margin:109px 4.2361vw 45px 4.9305vw
     letter-spacing: -0.005em;
 }
 
-.get-white {background-color: white;
-color: #F3603B;
-height: 44px;
+.get-white {
+    background-color: white;
+    color: #F3603B;
+    height: 44px;
 }
 
 .get-white:hover {
@@ -153,7 +181,8 @@ height: 44px;
     background-color: white;
 }
 
-.footer2{background-color:  #1E1E26;
+.footer2{
+    background-color:  #1E1E26;
     color:white;
     display: flex;
     justify-content: space-between;
@@ -166,42 +195,49 @@ height: 44px;
     margin-top: 66.68px;
 }
 
-/*
-a[href^="https"]:hover{
-    color: #F3603B;
-}*/
+.icono img:hover{
+    cursor: pointer;
+    filter: invert(0.6) sepia(2) saturate(5) 
+}
 
 a[href^="https"]{
     padding-left: 0px;
     padding-right: 13.33px;
 }
 
+.footer2 > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.5;
+    font-size: 0.8125rem;
+}
+
 button{
     box-shadow: none;
-    padding:11.5px 22.5px;}
+    padding:11.5px 22.5px;
+    border: 0;
+}
 
 button:hover {
     background-color: #f07d60;
+    cursor: pointer;
 }
 
 input[type="email"]{
     border-radius: 50px;
-    padding: 12.5px 10px
+    padding: 12.5px 10px;
+    border: 0
 }
 
 input[type="email"]:invalid {
-    color:red;
+    color:rgb(231, 58, 58);
+    outline-color:rgb(231, 58, 58)
 }
-
-/*.feedback:invalid {
-    color:red
- <span class="feedback">Please insert a valid email</span>   
-}*/
 
 .copyright{ font-size: 0.78125rem;
     color: #8C8C94;
     position: absolute;
-    right: 164.9px; 
+    right: 11.3vw; 
     bottom: 62px;
 }
 
@@ -217,44 +253,147 @@ input[type="email"]:invalid {
     margin-bottom: 12px;
 }
 
-img[alt="Icon Hamburguer"]{
-    display: none;
-}
-
 @media (max-width: 1020px) {
-nav, header > a {
+    nav, header > a {
+            display: none;
+        }
+
+    img[alt="Icon Hamburguer"]{
+        display: block;
+    }
+
+    .testimonios:nth-child(2){
         display: none;
     }
-img[alt="Icon Hamburguer"]{
-    display: block;
-}
-.testimonios:nth-child(2) {
-    display: none;
-
 }
 
-
-}
-
-@media (max-width:862px) {
+@media (max-width:862px){
     .footer2, .section1{
         flex-direction: column-reverse;
     }
-
     .section2, .footer1{
         flex-direction: column;
     }
-
     .testimonios:nth-child(3){
         display: none;
     }
-
     .li-footer{
         flex-direction: row;
     }
+    article{
+        width: 100%;
+    }
+    .footer1 > h2{
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .h2-section2, .h2-section3{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    #parrafo2{
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
 }
 
+@media (max-width:480px){
+    header{
+        background-size:90%;
+        background-position: right -30px top -20px;
+    }
+    
+    main{
+        background-size: 90%, 0%;
+    }
 
+    h1{ 
+        font-size: 2rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.03rem;
+        margin-bottom: 10px;
+    }
+
+    .parrafo1, #parrafo2 {
+        width: 100%;
+        color: #B3B2B7;
+    }
+    .section1, .section2{
+        text-align: center;
+    }
+
+    .section1{
+        background-image: url(../imagenes/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-position: right -110px bottom;
+        background-size: 70%;
+    }
+
+    .footer1{
+        background-image: url(../imagenes/bg-simplify-section-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    
+    .footer2 > div:nth-child(1) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .copyright{
+        right: 20.64vw;
+        bottom: 8vh;
+    }
+
+    button{
+        margin-bottom: 50px;
+    }
+
+    .icono{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .contenedor-points {
+        padding-left: 0;
+        width: 100%;
+        text-align: start;
+        margin: 0 2px
+    }
+
+    .num{
+        position:static;
+        margin-right: 15px;
+    } 
+
+    .contenedor-points h4{
+        background-color: rgba(241, 210, 202, 0.4);
+        padding:11.5px 0;
+    }
+
+    .section2{
+        padding: 0 0 60px 0;
+    }
+
+    .h2-section2, #parrafo2{
+        padding-left: 11.4583vw;
+        padding-right: 11.4583vw;
+    }
+
+    .testimonios{
+        margin-right: 0
+    }
+
+    .get2{
+        margin-bottom: 80px;
+    }
+    
+    input[type="email"]{
+        padding-right: 40px ;
+    }
+}
 
 
 
